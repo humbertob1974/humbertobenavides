@@ -590,6 +590,20 @@
       #experiencia .stat { padding: 18px 14px; }
     }
 
+
+/* EmailJS contact form */
+.contact-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(320px,1.1fr);gap:42px;align-items:start}
+.contact-form{display:grid;gap:16px;padding:28px;border:1px solid rgba(255,255,255,.12);border-radius:22px;background:rgba(255,255,255,.035);box-shadow:0 20px 70px rgba(0,0,0,.18)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-field{display:grid;gap:8px}.form-field label{font-size:.88rem;font-weight:650;color:var(--text)}
+.form-field input,.form-field textarea{width:100%;border:1px solid rgba(255,255,255,.14);border-radius:12px;background:rgba(5,10,18,.66);color:var(--text);font:inherit;padding:13px 14px;outline:none;transition:border-color .2s,box-shadow .2s}
+.form-field textarea{min-height:132px;resize:vertical}
+.form-field input:focus,.form-field textarea:focus{border-color:rgba(82,160,255,.8);box-shadow:0 0 0 3px rgba(82,160,255,.14)}
+.form-field input[aria-invalid="true"],.form-field textarea[aria-invalid="true"]{border-color:#ff7b7b}
+.field-error{min-height:1.1em;font-size:.78rem;color:#ff9a9a}
+.form-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.form-status{font-size:.88rem;min-height:1.25em}.form-status.success{color:#7fe2ad}.form-status.error{color:#ff9a9a}
+.contact-form button[disabled]{opacity:.65;cursor:wait}
+@media(max-width:850px){.contact-layout{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.contact-form{padding:20px}}
 </style>
 <link data-generated-seo="true" href="https://humbertobenavides.com/en/" rel="canonical"/><link data-generated-seo="true" href="https://humbertobenavides.com/es/" hreflang="es" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/en/" hreflang="en" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/" hreflang="x-default" rel="alternate"/><meta content="Humberto Benavides | AI Business Advisor" data-generated-seo="true" property="og:title"/><meta content="I help businesses implement artificial intelligence and automation to reduce costs, save time, and grow." data-generated-seo="true" property="og:description"/><meta content="website" data-generated-seo="true" property="og:type"/><meta content="https://humbertobenavides.com/en/" data-generated-seo="true" property="og:url"/><meta content="en_US" data-generated-seo="true" property="og:locale"/><meta content="https://humbertobenavides.com/assets/img/humberto-benavides.webp" property="og:image"/><meta content="summary_large_image" name="twitter:card"/></head>
 <body>
@@ -606,7 +620,7 @@
 <a data-i18n="nav.experience" href="#experiencia">Experience</a>
 <a data-i18n="nav.contact" href="#contacto">Contact</a>
 </div>
-<div class="nav-actions"><a class="btn btn-primary" data-i18n="nav.cta" href="mailto:contacto@humbertobenavides.com?subject=AI%20consulting%20for%20my%20business">Book an assessment</a><div aria-label="Selector de idioma" class="language-switcher" role="group"><a aria-current="false" class="lang-btn" data-language="es" href="/es/">ES</a><a aria-current="page" class="lang-btn active" data-language="en" href="/en/">EN</a></div><button aria-label="Open menu" class="menu-btn" data-i18n-aria="menu.open" id="menuBtn">☰</button></div></nav>
+<div class="nav-actions"><a class="btn btn-primary" data-i18n="nav.cta" href="#contacto">Book an assessment</a><div aria-label="Selector de idioma" class="language-switcher" role="group"><a aria-current="false" class="lang-btn" data-language="es" href="/es/">ES</a><a aria-current="page" class="lang-btn active" data-language="en" href="/en/">EN</a></div><button aria-label="Open menu" class="menu-btn" data-i18n-aria="menu.open" id="menuBtn">☰</button></div></nav>
 </div>
 </div>
 <main>
@@ -617,7 +631,7 @@
 <h1 data-i18n-html="hero.title">I transform businesses with <span class="gradient">artificial intelligence.</span></h1>
 <p class="hero-copy" data-i18n="hero.copy">I help local and remote businesses automate processes, reduce repetitive work, and turn AI into measurable results—without unnecessary technical complexity.</p>
 <div class="hero-actions">
-<a class="btn btn-primary" data-i18n="hero.cta1" href="mailto:contacto@humbertobenavides.com?subject=AI%20consulting%20for%20my%20business">Request an assessment</a>
+<a class="btn btn-primary" data-i18n="hero.cta1" href="#contacto">Request an assessment</a>
 <a class="btn btn-secondary" data-i18n="hero.cta2" href="#servicios">Explore solutions ↓</a>
 </div>
 <div class="trust-row">
@@ -756,18 +770,22 @@
 </div>
 </section>
 <section class="section" id="contacto">
-<div class="container">
-<div class="cta reveal">
-<div><div class="contact-person"><img alt="Humberto Benavides" class="contact-avatar" decoding="async" height="360" loading="lazy" src="/assets/img/humberto-benavides-avatar.webp" width="360"/><div class="contact-person-copy"><strong>Humberto Benavides</strong><span>AI Business Advisor</span></div></div>
-<div class="section-label" data-i18n="contact.label">Next step</div>
-<h2 data-i18n="contact.title">Discover where AI can create value in your business.</h2>
-<p data-i18n="contact.copy">Schedule an initial conversation to review your processes, priorities, and automation opportunities.</p>
+<div class="container contact-layout">
+<div class="reveal">
+<div class="contact-person"><img alt="Humberto Benavides" class="contact-avatar" decoding="async" height="360" loading="lazy" src="/assets/img/humberto-benavides-avatar.webp" width="360"/><div class="contact-person-copy"><strong>Humberto Benavides</strong><span>AI Business Advisor</span></div></div>
+<div class="section-label">Next step</div>
+<h2 class="section-heading">Discover where AI can create value in your business.</h2>
+<p class="section-copy">Send me your details and a brief message. I will reply to discuss your processes, priorities and automation opportunities.</p>
+<a class="btn btn-secondary" href="https://www.linkedin.com/in/humberto-benavides-ba55932/" rel="noopener" target="_blank">View LinkedIn</a>
 </div>
-<div class="cta-actions">
-<a class="btn btn-primary" data-i18n="contact.cta1" href="mailto:contacto@humbertobenavides.com?subject=AI%20consulting%20for%20my%20business">Contact by email</a>
-<a class="btn btn-secondary" data-i18n="contact.cta2" href="https://www.linkedin.com/in/humberto-benavides-ba55932/" rel="noopener" target="_blank">LinkedIn</a>
-</div>
-</div>
+<form class="contact-form reveal" data-lang="en" novalidate>
+<div class="form-row"><div class="form-field"><label for="name-en">Name *</label><input id="name-en" name="from_name" type="text" autocomplete="name" required><span class="field-error" data-error-for="from_name"></span></div>
+<div class="form-field"><label for="email-en">Email address *</label><input id="email-en" name="reply_to" type="email" autocomplete="email" required><span class="field-error" data-error-for="reply_to"></span></div></div>
+<div class="form-field"><label for="phone-en">Phone</label><input id="phone-en" name="phone" type="tel" autocomplete="tel"><span class="field-error"></span></div>
+<div class="form-field"><label for="message-en">Brief message *</label><textarea id="message-en" name="message" required></textarea><span class="field-error" data-error-for="message"></span></div>
+<input name="language" type="hidden" value="English"><input name="subject" type="hidden" value="New website contact from humbertobenavides.com">
+<div class="form-actions"><button class="btn btn-primary" type="submit">Send message</button><span class="form-status" aria-live="polite"></span></div>
+</form>
 </div>
 </section>
 </main>
@@ -777,6 +795,82 @@
 <div data-i18n="footer.tags">Artificial Intelligence · Automation · Strategy</div>
 </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="/assets/js/emailjs-config.js"></script>
+<script>
+(function () {
+  const config = window.EMAILJS_CONFIG || {};
+  if (config.publicKey) emailjs.init({ publicKey: config.publicKey });
+
+  document.querySelectorAll('.contact-form').forEach(function (form) {
+    const lang = form.dataset.lang || 'en';
+    const messages = lang === 'es' ? {
+      requiredName: 'Escribe tu nombre.', requiredEmail: 'Escribe tu correo electrónico.',
+      invalidEmail: 'Escribe una dirección de correo válida.', requiredMessage: 'Escribe un mensaje breve.',
+      sending: 'Enviando…', success: 'Gracias. Tu mensaje fue enviado correctamente.',
+      config: 'El formulario necesita las claves de EmailJS para comenzar a enviar mensajes.',
+      error: 'No fue posible enviar el mensaje. Intenta nuevamente.'
+    } : {
+      requiredName: 'Please enter your name.', requiredEmail: 'Please enter your email address.',
+      invalidEmail: 'Please enter a valid email address.', requiredMessage: 'Please enter a brief message.',
+      sending: 'Sending…', success: 'Thank you. Your message was sent successfully.',
+      config: 'The EmailJS keys must be added before this form can send messages.',
+      error: 'The message could not be sent. Please try again.'
+    };
+    const status = form.querySelector('.form-status');
+    const button = form.querySelector('button[type="submit"]');
+    const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]{2,}$/;
+
+    function setError(field, message) {
+      field.setAttribute('aria-invalid', message ? 'true' : 'false');
+      const error = form.querySelector('[data-error-for="' + field.name + '"]');
+      if (error) error.textContent = message || '';
+    }
+
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault();
+      status.textContent = '';
+      status.className = 'form-status';
+      const name = form.elements.from_name;
+      const email = form.elements.reply_to;
+      const message = form.elements.message;
+      let valid = true;
+
+      setError(name, ''); setError(email, ''); setError(message, '');
+      if (!name.value.trim()) { setError(name, messages.requiredName); valid = false; }
+      if (!email.value.trim()) { setError(email, messages.requiredEmail); valid = false; }
+      else if (!emailPattern.test(email.value.trim())) { setError(email, messages.invalidEmail); valid = false; }
+      if (!message.value.trim()) { setError(message, messages.requiredMessage); valid = false; }
+      if (!valid) return;
+
+      if (!config.publicKey || !config.serviceId || !config.templateId || /YOUR_/.test(config.publicKey + config.serviceId + config.templateId)) {
+        status.textContent = messages.config;
+        status.className = 'form-status error';
+        return;
+      }
+
+      button.disabled = true;
+      const original = button.textContent;
+      button.textContent = messages.sending;
+      try {
+        await emailjs.sendForm(config.serviceId, config.templateId, form);
+        form.reset();
+        status.textContent = messages.success;
+        status.className = 'form-status success';
+      } catch (error) {
+        console.error('EmailJS:', error);
+        status.textContent = messages.error;
+        status.className = 'form-status error';
+      } finally {
+        button.disabled = false;
+        button.textContent = original;
+      }
+    });
+  });
+})();
+</script>
+
 <script defer="" src="/assets/js/site.js"></script>
 </body>
 </html>
