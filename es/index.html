@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 
 <html lang="es">
 <head>
@@ -86,9 +85,9 @@
       display: grid; place-items: center;
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       box-shadow: 0 0 32px rgba(124,92,255,.45);
-      font-family: Inter, sans-serif;
+      font-family: "Space Grotesk";
     }
-    .brand-name { font-family: Inter, sans-serif; letter-spacing: -.03em; }
+    .brand-name { font-family: "Space Grotesk"; letter-spacing: -.03em; }
     .brand-name span { display: block; color: var(--muted); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; margin-top: 2px; }
 
     .nav-links { display: flex; align-items: center; gap: 24px; color: var(--muted); font-size: 14px; }
@@ -148,7 +147,7 @@
     .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 rgba(122,247,199,.6); animation: pulse 2s infinite; }
     @keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(122,247,199,0); } 100% { box-shadow: 0 0 0 0 rgba(122,247,199,0); } }
 
-    h1, h2, h3 { font-family: Inter, sans-serif; margin: 0; letter-spacing: -.045em; }
+    h1, h2, h3 { font-family: "Space Grotesk", sans-serif; margin: 0; letter-spacing: -.045em; }
     h1 { font-size: clamp(48px, 7vw, 88px); line-height: .98; max-width: 900px; margin-top: 24px; }
     h1 .gradient { background: linear-gradient(90deg, #fff, #aab6ff 35%, #5ae5ff 70%, #7af7c7); -webkit-background-clip: text; color: transparent; }
     .hero-copy { margin: 28px 0 32px; max-width: 680px; color: var(--muted); font-size: 19px; line-height: 1.7; }
@@ -198,7 +197,7 @@
       box-shadow: var(--shadow);
       animation: cardFloat 6s ease-in-out infinite;
     }
-    .floating-card strong { display: block; font-family: Inter, sans-serif; font-size: 18px; }
+    .floating-card strong { display: block; font-family: "Space Grotesk"; font-size: 18px; }
     .floating-card small { color: var(--muted); line-height: 1.5; display: block; margin-top: 5px; }
     .card-a { top: 55px; left: 0; }
     .card-b { right: -10px; top: 190px; animation-delay: -2s; }
@@ -234,7 +233,7 @@
     .process { display:grid; grid-template-columns: .9fr 1.1fr; gap: 60px; align-items:start; }
     .steps { display:grid; gap: 16px; }
     .step { display:grid; grid-template-columns: 50px 1fr; gap:18px; padding: 22px; border:1px solid var(--line); border-radius:18px; background:rgba(255,255,255,.04); }
-    .step-num { width: 50px; height: 50px; border-radius:15px; display:grid; place-items:center; background:linear-gradient(135deg,var(--primary),var(--secondary)); font-family:Inter, sans-serif; font-weight:800; }
+    .step-num { width: 50px; height: 50px; border-radius:15px; display:grid; place-items:center; background:linear-gradient(135deg,var(--primary),var(--secondary)); font-family:"Space Grotesk"; font-weight:800; }
     .step h3 { font-size: 20px; }
     .step p { color: var(--muted); margin: 7px 0 0; line-height: 1.55; }
 
@@ -243,7 +242,7 @@
     .profile-box p { color: var(--muted); line-height: 1.7; }
     .profile-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:26px; }
     .stat { padding:16px 10px; text-align:center; border-radius:14px; background:rgba(255,255,255,.05); border:1px solid var(--line); }
-    .stat strong { font-family:Inter, sans-serif; font-size:26px; display:block; }
+    .stat strong { font-family:"Space Grotesk"; font-size:26px; display:block; }
     .stat span { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; }
 
     .cta {
@@ -320,58 +319,80 @@
       .language-switcher { position:absolute; top:76px; right:20px; }
     }
   
-    /* Executive visual refinement */
+
+    /* Executive visual system v2 */
     :root {
-      --bg: #070a12;
-      --bg-soft: #0c111c;
-      --surface: rgba(255,255,255,.045);
-      --surface-strong: rgba(255,255,255,.075);
-      --line: rgba(255,255,255,.10);
-      --text: #f5f7fb;
-      --muted: #a6afc0;
-      --primary: #6f7cff;
-      --secondary: #77a7ff;
-      --accent: #8fd8c4;
-      --shadow: 0 20px 60px rgba(0,0,0,.28);
-      --radius: 20px;
+      --bg:#070a12; --bg-soft:#0d111c; --surface:rgba(255,255,255,.045);
+      --surface-strong:rgba(255,255,255,.075); --line:rgba(255,255,255,.095);
+      --text:#f6f7fb; --muted:#a3aabc; --primary:#6d7cff; --secondary:#4cc9d9;
+      --accent:#9be3d1; --shadow:0 24px 70px rgba(0,0,0,.28); --radius:22px;
     }
-    body {
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at 18% 8%, rgba(111,124,255,.12), transparent 30%),
-        radial-gradient(circle at 88% 14%, rgba(119,167,255,.08), transparent 28%),
-        linear-gradient(180deg, #070a12 0%, #0a1019 48%, #070a12 100%);
-    }
-    h1, h2, h3, .brand-mark, .brand-name, .floating-card strong, .step-num, .stat strong {
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-    h1, h2, h3 { letter-spacing: -.035em; }
-    nav { background: rgba(7,10,18,.78); box-shadow: 0 8px 28px rgba(0,0,0,.18); }
-    .brand-mark { box-shadow: none; background: linear-gradient(135deg, #6370e8, #7e9fe8); }
-    .btn { border-radius: 12px; font-weight: 650; }
-    .btn-primary { background: #6f7cff; box-shadow: 0 12px 30px rgba(76,89,205,.22); }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 36px rgba(76,89,205,.28); }
-    .eyebrow { color: #c7d1ff; border-color: rgba(111,124,255,.22); background: rgba(111,124,255,.07); }
-    .pulse { background: #8fd8c4; }
-    h1 .gradient { background: linear-gradient(90deg, #fff, #c5cced 55%, #9eb9ee); -webkit-background-clip:text; color:transparent; }
-    .orb { filter: saturate(90%); opacity:.82; box-shadow: inset -45px -35px 100px rgba(0,0,0,.66), 0 0 70px rgba(82,110,210,.18); animation-duration: 10s; }
-    .orb-ring { border-color: rgba(119,167,255,.20); box-shadow:none; animation-duration:18s; }
-    .floating-card { background: rgba(10,15,25,.80); animation-duration:8s; }
-    .metric span, .step-num { background: linear-gradient(90deg, #6f7cff, #7e9fe8); }
-    .section-label { color: #9eb9ee; }
-    .card { background: rgba(255,255,255,.038); }
-    .card:hover { transform: translateY(-5px); border-color: rgba(145,165,220,.24); background: rgba(255,255,255,.055); }
-    .card::before { background: rgba(111,124,255,.10); }
-    .icon { background: rgba(111,124,255,.10); }
-    .profile-box { background: linear-gradient(145deg, rgba(111,124,255,.08), rgba(119,167,255,.025)); }
-    .cta { background: radial-gradient(circle at 12% 18%, rgba(111,124,255,.18), transparent 34%), rgba(255,255,255,.035); }
-    .lang-btn.active { background:#6f7cff; box-shadow:none; }
-    .reveal { transition-duration:.65s; }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; transition-duration:.01ms !important; }
+    body { font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:
+      radial-gradient(circle at 15% 0%, rgba(109,124,255,.14), transparent 26%),
+      radial-gradient(circle at 88% 12%, rgba(76,201,217,.10), transparent 24%),
+      linear-gradient(180deg,#070a12 0%,#0a0e18 48%,#070a12 100%); }
+    h1,h2,h3,.brand-name,.brand-mark,.floating-card strong,.step-num,.stat strong { font-family:Inter,system-ui,sans-serif; }
+    body::before { opacity:.55; background-size:56px 56px; }
+    .nav-wrap { top:12px; }
+    nav { min-height:64px; padding:10px 12px 10px 16px; border-radius:16px; background:rgba(7,10,18,.76); box-shadow:0 12px 34px rgba(0,0,0,.22); }
+    .brand-mark { width:38px;height:38px;border-radius:12px;box-shadow:none;font-size:13px; }
+    .brand-name { font-size:14px;letter-spacing:-.02em; }
+    .nav-links { gap:20px; }
+    .nav-actions { display:flex; align-items:center; gap:10px; }
+    .language-switcher { position:static !important; display:inline-flex; align-items:center; height:34px; padding:3px; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.035); }
+    .lang-btn { min-width:34px; height:26px; padding:0 9px; display:grid; place-items:center; border-radius:999px; font-size:11px; font-weight:700; line-height:1; }
+    .lang-btn.active { background:rgba(255,255,255,.12); box-shadow:none; }
+    .btn { min-height:44px; padding:0 18px; border-radius:12px; font-size:14px; }
+    .btn-primary { background:linear-gradient(135deg,#6675f5,#6f8cff 55%,#53bfc9); box-shadow:0 12px 30px rgba(74,93,220,.20); }
+    .btn-primary:hover { transform:translateY(-2px); box-shadow:0 16px 36px rgba(74,93,220,.28); }
+    .hero { min-height:auto; padding:160px 0 105px; }
+    .hero-grid { grid-template-columns:1.05fr .95fr; gap:72px; }
+    h1 { font-size:clamp(48px,6.6vw,82px); line-height:1.01; letter-spacing:-.065em; }
+    h1 .gradient { background:linear-gradient(90deg,#fff 0%,#cfd5ff 48%,#82d7df 100%);-webkit-background-clip:text;color:transparent; }
+    .hero-copy { font-size:18px; line-height:1.72; max-width:650px; }
+    .eyebrow { padding:7px 11px; color:#c8d0ff; border-color:rgba(109,124,255,.24); background:rgba(109,124,255,.07); }
+    .pulse { background:#96d9ca; }
+    .ai-visual { min-height:560px; }
+    .orb { width:370px;height:370px; opacity:.92; filter:saturate(105%); box-shadow:inset -40px -30px 90px rgba(0,0,0,.62),0 0 90px rgba(93,117,230,.20); }
+    .orb-ring { width:470px; border-color:rgba(99,185,203,.22); }
+    .floating-card { width:220px; padding:16px; border-radius:16px; background:rgba(13,17,28,.78); box-shadow:0 18px 45px rgba(0,0,0,.24); }
+    .section { padding:104px 0; }
+    .section-heading { font-size:clamp(34px,4.7vw,58px); letter-spacing:-.055em; }
+    .section-copy { font-size:17px; }
+    .card { background:rgba(255,255,255,.035); box-shadow:0 14px 42px rgba(0,0,0,.10); }
+    .card:hover { transform:translateY(-5px); border-color:rgba(129,151,255,.28); background:rgba(255,255,255,.055); }
+    .card::before { opacity:.38; }
+    .tech-strip { margin-top:52px; padding:18px 22px; display:flex; align-items:center; justify-content:space-between; gap:22px; flex-wrap:wrap; border:1px solid var(--line); border-radius:18px; background:rgba(255,255,255,.025); }
+    .tech-strip-label { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.12em; font-weight:700; }
+    .tech-logos { display:flex; flex-wrap:wrap; gap:10px; }
+    .tech-pill { padding:9px 13px; border-radius:999px; background:rgba(255,255,255,.045); border:1px solid rgba(255,255,255,.07); color:#dfe3ee; font-size:13px; font-weight:600; }
+    .impact-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:42px; }
+    .impact-card { padding:24px; border:1px solid var(--line); border-radius:18px; background:rgba(255,255,255,.032); }
+    .impact-card strong { display:block; font-size:clamp(30px,4vw,46px); letter-spacing:-.05em; }
+    .impact-card span { color:var(--muted); font-size:13px; line-height:1.45; }
+    .case-layout { display:grid; grid-template-columns:.72fr 1.28fr; gap:28px; margin-top:46px; align-items:stretch; }
+    .case-tabs { display:grid; gap:10px; }
+    .case-tab { text-align:left; padding:18px 20px; border:1px solid var(--line); border-radius:16px; background:rgba(255,255,255,.025); color:var(--muted); cursor:pointer; transition:.25s ease; }
+    .case-tab strong { display:block;color:var(--text);font-size:16px;margin-bottom:4px; }
+    .case-tab.active { background:rgba(109,124,255,.10); border-color:rgba(109,124,255,.28); color:#cfd5e7; transform:translateX(4px); }
+    .case-panel { min-height:360px; padding:34px; border:1px solid var(--line); border-radius:22px; background:linear-gradient(145deg,rgba(109,124,255,.08),rgba(76,201,217,.035)); position:relative; overflow:hidden; }
+    .case-panel::after { content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-100px;bottom:-130px;background:rgba(109,124,255,.13);filter:blur(12px); }
+    .case-kicker { color:#aeb8ff; text-transform:uppercase; letter-spacing:.14em; font-size:11px; font-weight:800; }
+    .case-panel h3 { font-size:34px; margin:14px 0 14px; }
+    .case-panel p { color:var(--muted); line-height:1.7; max-width:650px; }
+    .case-results { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:28px; }
+    .case-result { padding:16px; border:1px solid rgba(255,255,255,.08); border-radius:14px; background:rgba(0,0,0,.12); }
+    .case-result b { display:block; margin-bottom:4px; }
+    .profile-box,.cta { box-shadow:0 18px 55px rgba(0,0,0,.16); }
+    .reveal { transform:translateY(22px); transition:opacity .72s ease,transform .72s ease; }
+    @media(max-width:900px){ .impact-grid{grid-template-columns:repeat(2,1fr)} .case-layout{grid-template-columns:1fr} .tech-strip{align-items:flex-start} }
+    @media(max-width:600px){
+      .nav-actions>.btn{display:none}.language-switcher{height:32px}.lang-btn{height:24px;min-width:31px;padding:0 7px}
+      .impact-grid{grid-template-columns:1fr 1fr}.case-results{grid-template-columns:1fr}.case-panel{padding:26px;min-height:0}.case-panel h3{font-size:28px}
+      .tech-strip{padding:16px}.tech-logos{gap:8px}.tech-pill{font-size:12px;padding:8px 10px}
     }
 
-</style>
+  </style>
 <link data-generated-seo="true" href="https://humbertobenavides.com/es/" rel="canonical"/><link data-generated-seo="true" href="https://humbertobenavides.com/es/" hreflang="es" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/en/" hreflang="en" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/" hreflang="x-default" rel="alternate"/><meta content="Humberto Benavides | Asesor de IA para Negocios" data-generated-seo="true" property="og:title"/><meta content="Ayudo a empresas a implementar inteligencia artificial y automatización para reducir costos, ahorrar tiempo y crecer." data-generated-seo="true" property="og:description"/><meta content="website" data-generated-seo="true" property="og:type"/><meta content="https://humbertobenavides.com/es/" data-generated-seo="true" property="og:url"/><meta content="es_US" data-generated-seo="true" property="og:locale"/></head>
 <body>
 <div class="nav-wrap">
@@ -467,6 +488,37 @@
 </div>
 </div>
 </section>
+
+<section class="section" id="impacto">
+<div class="container">
+<div class="section-label reveal">Impacto empresarial</div>
+<h2 class="section-heading reveal">IA que se traduce en tiempo, control y capacidad de crecimiento.</h2>
+<p class="section-copy reveal">Cada solución comienza con un objetivo operativo claro y termina con una mejora que puede medirse.</p>
+<div class="impact-grid">
+<div class="impact-card reveal"><strong class="counter" data-target="20" data-suffix="+">0</strong><span>Años combinando tecnología y operación</span></div>
+<div class="impact-card reveal"><strong class="counter" data-target="8">0</strong><span>Años en liderazgo ejecutivo</span></div>
+<div class="impact-card reveal"><strong class="counter" data-target="4" data-suffix="x">0</strong><span>Áreas clave: estrategia, procesos, datos y adopción</span></div>
+<div class="impact-card reveal"><strong class="counter" data-target="100" data-suffix="%">0</strong><span>Enfoque orientado al valor del negocio</span></div>
+</div>
+<div class="tech-strip reveal"><div class="tech-strip-label">Ecosistema de soluciones</div><div class="tech-logos"><span class="tech-pill">OpenAI</span><span class="tech-pill">Microsoft</span><span class="tech-pill">Google</span><span class="tech-pill">n8n</span><span class="tech-pill">Make</span><span class="tech-pill">Zapier</span><span class="tech-pill">HubSpot</span></div></div>
+</div>
+</section>
+<section class="section" id="casos">
+<div class="container">
+<div class="section-label reveal">Casos de uso</div>
+<h2 class="section-heading reveal">Aplicaciones prácticas para empresas que quieren operar mejor.</h2>
+<p class="section-copy reveal">Explora cómo la IA puede apoyar distintas áreas sin reemplazar el criterio humano.</p>
+<div class="case-layout reveal">
+<div class="case-tabs">
+<button class="case-tab active" data-case="operations"><strong>Operaciones</strong>Menos tareas manuales y mejor seguimiento.</button>
+<button class="case-tab" data-case="service"><strong>Servicio al cliente</strong>Respuestas más rápidas y consistentes.</button>
+<button class="case-tab" data-case="documents"><strong>Documentos</strong>Extracción y clasificación de información.</button>
+<button class="case-tab" data-case="knowledge"><strong>Conocimiento interno</strong>Información accesible para el equipo.</button>
+</div>
+<div class="case-panel" id="casePanel"></div>
+</div>
+</div>
+</section>
 <section class="section" id="metodo">
 <div class="container process">
 <div>
@@ -529,5 +581,18 @@
 </div>
 </footer>
 
-<script defer="True" src="/assets/js/site.js"></script></body>
+<script defer="True" src="/assets/js/site.js"></script>
+<script>
+const caseData={
+operations:{kicker:'Automatización operativa',title:'Flujos que conectan tareas, responsables y sistemas.',copy:'Automatiza seguimiento de solicitudes, actualización de registros, avisos internos y tareas repetitivas para reducir retrasos y errores.',results:['Menos captura manual','Mayor visibilidad','Procesos escalables']},
+service:{kicker:'Experiencia del cliente',title:'Respuestas rápidas sin perder el toque humano.',copy:'Centraliza preguntas frecuentes, prepara borradores y dirige cada solicitud al responsable correcto con contexto completo.',results:['Respuesta más rápida','Mensajes consistentes','Mejor seguimiento']},
+documents:{kicker:'Inteligencia documental',title:'Convierte documentos en información utilizable.',copy:'Extrae datos de facturas, contratos, órdenes, reportes y archivos operativos para clasificarlos, validarlos o llevarlos a otros sistemas.',results:['Menos captura','Menos errores','Datos disponibles']},
+knowledge:{kicker:'Conocimiento empresarial',title:'Un asistente interno que conoce tus procesos.',copy:'Organiza políticas, procedimientos, manuales y preguntas frecuentes para que el equipo encuentre respuestas confiables en segundos.',results:['Menos dependencia','Onboarding más rápido','Conocimiento centralizado']}
+};
+function renderCase(key){const d=caseData[key];document.getElementById('casePanel').innerHTML=`<div class="case-kicker">${d.kicker}</div><h3>${d.title}</h3><p>${d.copy}</p><div class="case-results">${d.results.map(x=>`<div class="case-result"><b>✓</b>${x}</div>`).join('')}</div>`}
+document.querySelectorAll('.case-tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.case-tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderCase(b.dataset.case)}));renderCase('operations');
+const counters=document.querySelectorAll('.counter');const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target,t=+el.dataset.target,s=el.dataset.suffix||'';let n=0;const step=Math.max(1,Math.ceil(t/40));const id=setInterval(()=>{n=Math.min(t,n+step);el.textContent=n+s;if(n>=t)clearInterval(id)},28);io.unobserve(el)}}),{threshold:.5});counters.forEach(c=>io.observe(c));
+</script>
+
+</body>
 </html>
