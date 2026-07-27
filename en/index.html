@@ -394,6 +394,111 @@
       .tech-strip{padding:16px}.tech-logos{gap:8px}.tech-pill{font-size:12px;padding:8px 10px}
     }
 
+
+    /* Mobile hero stability patch */
+    html, body { overflow-x: hidden; }
+    @media (max-width: 900px) {
+      .hero {
+        min-height: auto;
+        padding: 118px 0 64px;
+        align-items: flex-start;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 42px;
+        width: 100%;
+      }
+      .hero-grid > * { min-width: 0; }
+      .hero h1 {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+      }
+      .ai-visual {
+        width: 100%;
+        max-width: 620px;
+        min-height: 470px;
+        margin: 0 auto;
+        overflow: visible;
+        transform: none !important;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 104px 0 48px;
+      }
+      .hero-grid {
+        gap: 34px;
+      }
+      .eyebrow {
+        max-width: 100%;
+        font-size: 11px;
+        line-height: 1.35;
+        white-space: normal;
+      }
+      .hero h1 {
+        margin-top: 18px;
+        font-size: clamp(38px, 12.2vw, 52px);
+        line-height: 1.02;
+        letter-spacing: -.055em;
+      }
+      .hero-copy {
+        margin: 22px 0 26px;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.62;
+      }
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+      }
+      .hero-actions .btn {
+        width: 100%;
+        min-height: 48px;
+      }
+      .trust-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 24px;
+      }
+      .ai-visual {
+        min-height: 390px;
+        max-width: 360px;
+        overflow: hidden;
+        border-radius: 28px;
+      }
+      .orb {
+        width: 238px;
+        height: 238px;
+      }
+      .orb-ring {
+        width: 300px;
+        height: 104px;
+      }
+      .floating-card {
+        width: 154px;
+        padding: 11px 12px;
+        border-radius: 13px;
+      }
+      .floating-card strong { font-size: 12px; }
+      .floating-card small { font-size: 10px; line-height: 1.35; }
+      .card-a { top: 12px; left: 4px; }
+      .card-b { top: 132px; right: 2px; }
+      .card-c { left: 8px; bottom: 14px; }
+    }
+
+    @media (max-width: 380px) {
+      .hero h1 { font-size: 37px; }
+      .ai-visual { min-height: 360px; max-width: 330px; }
+      .orb { width: 215px; height: 215px; }
+      .orb-ring { width: 270px; }
+      .floating-card { width: 145px; }
+    }
+
   </style>
 <link data-generated-seo="true" href="https://humbertobenavides.com/en/" rel="canonical"/><link data-generated-seo="true" href="https://humbertobenavides.com/es/" hreflang="es" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/en/" hreflang="en" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/" hreflang="x-default" rel="alternate"/><meta content="Humberto Benavides | AI Business Advisor" data-generated-seo="true" property="og:title"/><meta content="I help businesses implement artificial intelligence and automation to reduce costs, save time, and grow." data-generated-seo="true" property="og:description"/><meta content="website" data-generated-seo="true" property="og:type"/><meta content="https://humbertobenavides.com/en/" data-generated-seo="true" property="og:url"/><meta content="en_US" data-generated-seo="true" property="og:locale"/></head>
 <body>
