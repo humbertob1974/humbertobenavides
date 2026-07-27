@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+<script>document.documentElement.classList.add('js');</script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="I help businesses implement artificial intelligence and automation to reduce costs, save time, and grow." name="description"/>
@@ -266,8 +267,9 @@
     footer { padding: 36px 0 48px; color: var(--muted); font-size:13px; }
     .footer-row { display:flex; justify-content:space-between; gap:20px; align-items:center; border-top:1px solid var(--line); padding-top:28px; }
 
-    .reveal { opacity:0; transform:translateY(28px); transition: .8s cubic-bezier(.2,.7,.2,1); }
-    .reveal.visible { opacity:1; transform:none; }
+    .reveal { opacity:1; transform:none; }
+    .js .reveal { opacity:0; transform:translateY(28px); transition: .8s cubic-bezier(.2,.7,.2,1); }
+    .js .reveal.visible { opacity:1; transform:none; }
 
     .menu-btn { display:none; width:44px; height:44px; border-radius:12px; border:1px solid var(--line); background:rgba(255,255,255,.05); color:white; }
 
@@ -384,7 +386,7 @@
     .case-result { padding:16px; border:1px solid rgba(255,255,255,.08); border-radius:14px; background:rgba(0,0,0,.12); }
     .case-result b { display:block; margin-bottom:4px; }
     .profile-box,.cta { box-shadow:0 18px 55px rgba(0,0,0,.16); }
-    .reveal { transform:translateY(22px); transition:opacity .72s ease,transform .72s ease; }
+    .js .reveal { transform:translateY(22px); transition:opacity .72s ease,transform .72s ease; }
     @media(max-width:900px){ .impact-grid{grid-template-columns:repeat(2,1fr)} .case-layout{grid-template-columns:1fr} .tech-strip{align-items:flex-start} }
     @media(max-width:600px){
       .nav-actions>.btn{display:none}.language-switcher{height:32px}.lang-btn{height:24px;min-width:31px;padding:0 7px}
