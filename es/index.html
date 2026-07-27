@@ -2,7 +2,7 @@
 
 <html lang="es">
 <head>
-<script>document.documentElement.classList.add('js');</script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="Ayudo a empresas a implementar inteligencia artificial y automatización para reducir costos, ahorrar tiempo y crecer." name="description"/>
@@ -268,7 +268,7 @@
     .footer-row { display:flex; justify-content:space-between; gap:20px; align-items:center; border-top:1px solid var(--line); padding-top:28px; }
 
     .reveal { opacity:1; transform:none; }
-    .js .reveal { opacity:0; transform:translateY(28px); transition: .8s cubic-bezier(.2,.7,.2,1); }
+    .js .reveal { opacity:1; transform:none; transition: .8s cubic-bezier(.2,.7,.2,1); }
     .js .reveal.visible { opacity:1; transform:none; }
 
     .menu-btn { display:none; width:44px; height:44px; border-radius:12px; border:1px solid var(--line); background:rgba(255,255,255,.05); color:white; }
@@ -386,7 +386,7 @@
     .case-result { padding:16px; border:1px solid rgba(255,255,255,.08); border-radius:14px; background:rgba(0,0,0,.12); }
     .case-result b { display:block; margin-bottom:4px; }
     .profile-box,.cta { box-shadow:0 18px 55px rgba(0,0,0,.16); }
-    .js .reveal { transform:translateY(22px); transition:opacity .72s ease,transform .72s ease; }
+    .js .reveal { opacity:1; transform:none; transition:opacity .72s ease,transform .72s ease; }
     @media(max-width:900px){ .impact-grid{grid-template-columns:repeat(2,1fr)} .case-layout{grid-template-columns:1fr} .tech-strip{align-items:flex-start} }
     @media(max-width:600px){
       .nav-actions>.btn{display:none}.language-switcher{height:32px}.lang-btn{height:24px;min-width:31px;padding:0 7px}
@@ -583,18 +583,8 @@
 </div>
 </footer>
 
-<script defer="True" src="/assets/js/site.js"></script>
-<script>
-const caseData={
-operations:{kicker:'Automatización operativa',title:'Flujos que conectan tareas, responsables y sistemas.',copy:'Automatiza seguimiento de solicitudes, actualización de registros, avisos internos y tareas repetitivas para reducir retrasos y errores.',results:['Menos captura manual','Mayor visibilidad','Procesos escalables']},
-service:{kicker:'Experiencia del cliente',title:'Respuestas rápidas sin perder el toque humano.',copy:'Centraliza preguntas frecuentes, prepara borradores y dirige cada solicitud al responsable correcto con contexto completo.',results:['Respuesta más rápida','Mensajes consistentes','Mejor seguimiento']},
-documents:{kicker:'Inteligencia documental',title:'Convierte documentos en información utilizable.',copy:'Extrae datos de facturas, contratos, órdenes, reportes y archivos operativos para clasificarlos, validarlos o llevarlos a otros sistemas.',results:['Menos captura','Menos errores','Datos disponibles']},
-knowledge:{kicker:'Conocimiento empresarial',title:'Un asistente interno que conoce tus procesos.',copy:'Organiza políticas, procedimientos, manuales y preguntas frecuentes para que el equipo encuentre respuestas confiables en segundos.',results:['Menos dependencia','Onboarding más rápido','Conocimiento centralizado']}
-};
-function renderCase(key){const d=caseData[key];document.getElementById('casePanel').innerHTML=`<div class="case-kicker">${d.kicker}</div><h3>${d.title}</h3><p>${d.copy}</p><div class="case-results">${d.results.map(x=>`<div class="case-result"><b>✓</b>${x}</div>`).join('')}</div>`}
-document.querySelectorAll('.case-tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.case-tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderCase(b.dataset.case)}));renderCase('operations');
-const counters=document.querySelectorAll('.counter');const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target,t=+el.dataset.target,s=el.dataset.suffix||'';let n=0;const step=Math.max(1,Math.ceil(t/40));const id=setInterval(()=>{n=Math.min(t,n+step);el.textContent=n+s;if(n>=t)clearInterval(id)},28);io.unobserve(el)}}),{threshold:.5});counters.forEach(c=>io.observe(c));
-</script>
+<script defer src="/assets/js/site.js"></script>
+
 
 </body>
 </html>
