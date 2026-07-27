@@ -2,7 +2,6 @@
 
 <html lang="en">
 <head>
-
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="I help businesses implement artificial intelligence and automation to reduce costs, save time, and grow." name="description"/>
@@ -499,8 +498,79 @@
       .floating-card { width: 145px; }
     }
 
-  </style>
-<link data-generated-seo="true" href="https://humbertobenavides.com/en/" rel="canonical"/><link data-generated-seo="true" href="https://humbertobenavides.com/es/" hreflang="es" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/en/" hreflang="en" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/" hreflang="x-default" rel="alternate"/><meta content="Humberto Benavides | AI Business Advisor" data-generated-seo="true" property="og:title"/><meta content="I help businesses implement artificial intelligence and automation to reduce costs, save time, and grow." data-generated-seo="true" property="og:description"/><meta content="website" data-generated-seo="true" property="og:type"/><meta content="https://humbertobenavides.com/en/" data-generated-seo="true" property="og:url"/><meta content="en_US" data-generated-seo="true" property="og:locale"/></head>
+  
+
+    /* Executive portrait integration */
+    .profile-box {
+      padding: 0;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(220px, .82fr) minmax(0, 1.18fr);
+      align-items: stretch;
+    }
+    .profile-photo-wrap {
+      position: relative;
+      min-height: 560px;
+      overflow: hidden;
+      background: #0c1221;
+    }
+    .profile-photo-wrap::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 58%, rgba(5,8,22,.42) 100%);
+      pointer-events: none;
+    }
+    .profile-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 34%;
+      transition: transform .7s cubic-bezier(.2,.8,.2,1);
+    }
+    .profile-box:hover .profile-photo { transform: scale(1.025); }
+    .profile-content {
+      padding: 42px 38px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 0;
+    }
+    .profile-content h3 { font-size: clamp(30px, 3.2vw, 44px); margin-top: 14px; }
+    .profile-content > p { color: var(--muted); line-height: 1.75; margin: 18px 0 0; }
+    .contact-person {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .contact-avatar {
+      width: 64px;
+      height: 64px;
+      flex: 0 0 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 28%;
+      border: 2px solid rgba(255,255,255,.16);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    .contact-person-copy strong { display: block; font-size: 15px; }
+    .contact-person-copy span { display: block; color: var(--muted); font-size: 13px; margin-top: 4px; }
+
+    @media (max-width: 900px) {
+      .profile-box { grid-template-columns: 1fr; }
+      .profile-photo-wrap { min-height: 0; aspect-ratio: 4 / 5; max-height: 680px; }
+      .profile-photo { object-position: 50% 31%; }
+    }
+    @media (max-width: 600px) {
+      .profile-photo-wrap { aspect-ratio: 4 / 5; }
+      .profile-content { padding: 30px 24px 32px; }
+      .profile-content h3 { font-size: 30px; }
+      .contact-person { align-items: center; margin-bottom: 16px; }
+      .contact-avatar { width: 54px; height: 54px; flex-basis: 54px; }
+    }
+</style>
+<link data-generated-seo="true" href="https://humbertobenavides.com/en/" rel="canonical"/><link data-generated-seo="true" href="https://humbertobenavides.com/es/" hreflang="es" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/en/" hreflang="en" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/" hreflang="x-default" rel="alternate"/><meta content="Humberto Benavides | AI Business Advisor" data-generated-seo="true" property="og:title"/><meta content="I help businesses implement artificial intelligence and automation to reduce costs, save time, and grow." data-generated-seo="true" property="og:description"/><meta content="website" data-generated-seo="true" property="og:type"/><meta content="https://humbertobenavides.com/en/" data-generated-seo="true" property="og:url"/><meta content="en_US" data-generated-seo="true" property="og:locale"/><meta content="https://humbertobenavides.com/assets/img/humberto-benavides.webp" property="og:image"/><meta content="summary_large_image" name="twitter:card"/></head>
 <body>
 <div class="nav-wrap">
 <div class="container">
@@ -595,17 +665,16 @@
 </div>
 </div>
 </section>
-
 <section class="section" id="impact">
 <div class="container">
 <div class="section-label reveal">Business impact</div>
 <h2 class="section-heading reveal">AI translated into time, control and capacity to grow.</h2>
 <p class="section-copy reveal">Every solution starts with a clear operational goal and ends with an improvement that can be measured.</p>
 <div class="impact-grid">
-<div class="impact-card reveal"><strong class="counter" data-target="20" data-suffix="+">0</strong><span>Years combining technology and operations</span></div>
+<div class="impact-card reveal"><strong class="counter" data-suffix="+" data-target="20">0</strong><span>Years combining technology and operations</span></div>
 <div class="impact-card reveal"><strong class="counter" data-target="8">0</strong><span>Years in executive leadership</span></div>
-<div class="impact-card reveal"><strong class="counter" data-target="4" data-suffix="x">0</strong><span>Core areas: strategy, process, data and adoption</span></div>
-<div class="impact-card reveal"><strong class="counter" data-target="100" data-suffix="%">0</strong><span>Business-value-driven approach</span></div>
+<div class="impact-card reveal"><strong class="counter" data-suffix="x" data-target="4">0</strong><span>Core areas: strategy, process, data and adoption</span></div>
+<div class="impact-card reveal"><strong class="counter" data-suffix="%" data-target="100">0</strong><span>Business-value-driven approach</span></div>
 </div>
 <div class="tech-strip reveal"><div class="tech-strip-label">Solution ecosystem</div><div class="tech-logos"><span class="tech-pill">OpenAI</span><span class="tech-pill">Microsoft</span><span class="tech-pill">Google</span><span class="tech-pill">n8n</span><span class="tech-pill">Make</span><span class="tech-pill">Zapier</span><span class="tech-pill">HubSpot</span></div></div>
 </div>
@@ -643,7 +712,7 @@
 </section>
 <section class="section" id="experiencia">
 <div class="container process">
-<div class="profile-box reveal">
+<div class="profile-box reveal"><div class="profile-photo-wrap"><img alt="Humberto Benavides, AI business advisor" class="profile-photo" decoding="async" height="1280" loading="lazy" src="/assets/img/humberto-benavides.webp" width="959"/></div><div class="profile-content">
 <div class="section-label" data-i18n="experience.label">Experience</div>
 <h3 data-i18n="experience.title">AI needs business judgment.</h3>
 <p data-i18n="experience.copy">My background combines executive leadership, systems management, and business operations. This allows me to translate technology into practical decisions for owners and teams.</p>
@@ -652,7 +721,7 @@
 <div class="stat"><strong>8</strong><span data-i18n="stat.1">Years in leadership</span></div>
 <div class="stat"><strong>360°</strong><span data-i18n="stat.2">Business perspective</span></div>
 </div>
-</div>
+</div></div>
 <div>
 <div class="section-label reveal" data-i18n="focus.label">Approach</div>
 <h2 class="section-heading reveal" data-i18n="focus.title">Technology with an operational and executive perspective.</h2>
@@ -668,7 +737,7 @@
 <section class="section" id="contacto">
 <div class="container">
 <div class="cta reveal">
-<div>
+<div><div class="contact-person"><img alt="Humberto Benavides" class="contact-avatar" decoding="async" height="360" loading="lazy" src="/assets/img/humberto-benavides-avatar.webp" width="360"/><div class="contact-person-copy"><strong>Humberto Benavides</strong><span>AI Business Advisor</span></div></div>
 <div class="section-label" data-i18n="contact.label">Next step</div>
 <h2 data-i18n="contact.title">Discover where AI can create value in your business.</h2>
 <p data-i18n="contact.copy">Schedule an initial conversation to review your processes, priorities, and automation opportunities.</p>
@@ -687,9 +756,6 @@
 <div data-i18n="footer.tags">Artificial Intelligence · Automation · Strategy</div>
 </div>
 </footer>
-
-<script defer src="/assets/js/site.js"></script>
-
-
+<script defer="" src="/assets/js/site.js"></script>
 </body>
 </html>
