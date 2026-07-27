@@ -569,6 +569,27 @@
       .contact-person { align-items: center; margin-bottom: 16px; }
       .contact-avatar { width: 54px; height: 54px; flex-basis: 54px; }
     }
+
+    /* Experience layout and portrait logo fixes */
+    .brand-mark { padding: 0; overflow: hidden; background: #111827; }
+    .brand-mark img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: 50% 28%; border-radius: inherit; }
+    #experiencia .process { grid-template-columns: 1fr; gap: 48px; }
+    #experiencia .profile-box { position: relative; top: auto; width: 100%; grid-template-columns: minmax(300px, .82fr) minmax(0, 1.18fr); overflow: visible; }
+    #experiencia .profile-photo-wrap { min-height: 600px; overflow: hidden; border-radius: var(--radius) 0 0 var(--radius); }
+    #experiencia .profile-content { justify-content: center; overflow: visible; }
+    #experiencia .profile-stats { width: 100%; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    #experiencia .stat { min-width: 0; }
+    #experiencia .stat span { display: block; white-space: normal; line-height: 1.35; }
+    @media (max-width: 900px) {
+      #experiencia .profile-box { grid-template-columns: 1fr; overflow: hidden; }
+      #experiencia .profile-photo-wrap { min-height: 0; border-radius: var(--radius) var(--radius) 0 0; }
+      #experiencia .profile-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 560px) {
+      #experiencia .profile-stats { grid-template-columns: 1fr; }
+      #experiencia .stat { padding: 18px 14px; }
+    }
+
 </style>
 <link data-generated-seo="true" href="https://humbertobenavides.com/en/" rel="canonical"/><link data-generated-seo="true" href="https://humbertobenavides.com/es/" hreflang="es" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/en/" hreflang="en" rel="alternate"/><link data-generated-seo="true" href="https://humbertobenavides.com/" hreflang="x-default" rel="alternate"/><meta content="Humberto Benavides | AI Business Advisor" data-generated-seo="true" property="og:title"/><meta content="I help businesses implement artificial intelligence and automation to reduce costs, save time, and grow." data-generated-seo="true" property="og:description"/><meta content="website" data-generated-seo="true" property="og:type"/><meta content="https://humbertobenavides.com/en/" data-generated-seo="true" property="og:url"/><meta content="en_US" data-generated-seo="true" property="og:locale"/><meta content="https://humbertobenavides.com/assets/img/humberto-benavides.webp" property="og:image"/><meta content="summary_large_image" name="twitter:card"/></head>
 <body>
@@ -576,7 +597,7 @@
 <div class="container">
 <nav>
 <a class="brand" href="#inicio">
-<div class="brand-mark">HB</div>
+<div class="brand-mark"><img src="/assets/img/humberto-benavides-logo.webp" alt="Humberto Benavides" width="38" height="38" decoding="async"/></div>
 <div class="brand-name">Humberto Benavides<span data-i18n="brand.subtitle">AI Business Advisor</span></div>
 </a>
 <div class="nav-links" id="navLinks">
