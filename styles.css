@@ -15,9 +15,8 @@ section[id] { scroll-margin-top:82px; }
 .motion-ready .reveal.is-visible { opacity:1; transform:none; }
 
 .site-header { align-items:center; background:rgba(7,27,40,.94); backdrop-filter:blur(18px); color:white; display:grid; grid-template-columns:1fr auto 1fr; height:82px; left:0; padding:0 clamp(24px,5vw,84px); position:fixed; right:0; top:0; z-index:50; }
-.brand { align-items:center; display:inline-flex; gap:14px; width:fit-content; }
-.brand-mark { align-items:center; border:1px solid var(--gold); color:var(--gold-light); display:inline-flex; font-family:var(--font-serif),serif; font-size:24px; height:38px; justify-content:center; line-height:1; width:38px; }
-.brand-name { font-family:var(--font-serif),serif; font-size:20px; letter-spacing:.02em; }
+.brand { align-items:center; display:inline-flex; width:fit-content; }
+.brand-logo { display:block; height:68px; object-fit:contain; width:auto; }
 .site-header nav { display:flex; gap:34px; }
 .site-header nav a { color:rgba(255,255,255,.73); font-size:12px; letter-spacing:.08em; transition:color .2s; }
 .site-header nav a:hover { color:white; }
@@ -154,6 +153,7 @@ em { color:var(--gold-light); font-weight:500; }
 
 footer { align-items:center; background:#04121c; color:rgba(255,255,255,.48); display:grid; font-size:10px; gap:30px; grid-template-columns:1fr 1fr 1fr; letter-spacing:.08em; min-height:130px; padding:25px clamp(24px,8vw,132px); }
 .footer-brand { color:white; }
+.footer-logo { height:90px; }
 footer p:nth-child(2) { text-align:center; }
 footer p:last-child { text-align:right; }
 
@@ -176,7 +176,7 @@ footer p:last-child { text-align:right; }
 }
 
 @media (max-width:640px) {
-  .site-header { height:70px; padding:0 16px; } .brand { gap:9px; } .brand-name { font-size:13px; } .brand-mark { font-size:20px; height:32px; width:32px; }
+  .site-header { height:70px; padding:0 16px; } .brand-logo { height:56px; }
   .header-actions { gap:9px; } .header-cta { display:none; }
   .language-switcher { padding:3px; } .language-switcher button { min-height:24px; min-width:25px; }
   .hero { min-height:900px; padding:135px 24px 240px; } .hero h1 { font-size:clamp(43px,12vw,60px); }
@@ -195,6 +195,7 @@ footer p:last-child { text-align:right; }
   .installed-capacity { font-size:39px; margin-top:54px; }
   .philosophy { min-height:540px; } .philosophy blockquote { font-size:40px; } .founder-portrait { min-height:0; }
   footer { grid-template-columns:1fr; padding-bottom:40px; padding-top:40px; text-align:left; }
+  .footer-logo { height:96px; }
   footer p:nth-child(2),footer p:last-child { margin:0; text-align:left; }
 }
 

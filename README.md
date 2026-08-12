@@ -14,3 +14,5 @@ El archivo `CNAME` ya contiene el dominio personalizado.
 El selector **ES / EN** incluido en el encabezado traduce todo el sitio y recuerda el idioma seleccionado en el dispositivo del visitante.
 
 En teléfonos y tabletas, el botón de menú abre la navegación completa y se cierra automáticamente al seleccionar una sección.
+
+El archivo `bta-logo.png` contiene el logotipo oficial utilizado en el encabezado y el pie de página.
