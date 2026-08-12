@@ -4,6 +4,7 @@
     ["Método", "Method"],
     ["Servicios", "Services"],
     ["Filosofía", "Philosophy"],
+    ["Contacto", "Contact"],
     ["Conversemos", "Let's talk"],
     ["Conversemos sobre su empresa", "Let's talk about your company"],
     ["Conozca IMPACT 0.1", "Discover IMPACT 0.1"],
@@ -142,6 +143,7 @@
   const languageGroup = document.querySelector(".language-switcher");
   const brandHome = document.querySelector(".site-header .brand");
   const mainNav = document.querySelector(".site-header nav");
+  const menuButton = document.querySelector(".menu-toggle");
   const portrait = document.querySelector(".founder-photo");
 
   function applyLanguage(language) {
@@ -153,6 +155,7 @@
     languageGroup?.setAttribute("aria-label", english ? "Select language" : "Seleccionar idioma");
     brandHome?.setAttribute("aria-label", english ? "Benavides Trusted Advisors, home" : "Benavides Trusted Advisors, inicio");
     mainNav?.setAttribute("aria-label", english ? "Main navigation" : "Navegación principal");
+    menuButton?.setAttribute("aria-label", menuButton.getAttribute("aria-expanded") === "true" ? (english ? "Close menu" : "Cerrar menú") : (english ? "Open menu" : "Abrir menú"));
     portrait?.setAttribute("alt", english ? "Humberto Benavides, founder of Benavides Trusted Advisors" : "Humberto Benavides, fundador de Benavides Trusted Advisors");
 
     nodes.forEach(({ node, original }) => {
@@ -173,6 +176,18 @@
   let initial = "es";
   try { initial = localStorage.getItem("benavides-trusted-advisors-language") === "en" ? "en" : "es"; } catch {}
   applyLanguage(initial);
+
+  function setMenu(open) {
+    mainNav?.classList.toggle("is-open", open);
+    menuButton?.setAttribute("aria-expanded", String(open));
+    const english = document.documentElement.lang === "en";
+    menuButton?.setAttribute("aria-label", open ? (english ? "Close menu" : "Cerrar menú") : (english ? "Open menu" : "Abrir menú"));
+  }
+
+  menuButton?.addEventListener("click", () => setMenu(menuButton.getAttribute("aria-expanded") !== "true"));
+  mainNav?.querySelectorAll("a").forEach(link => link.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", event => { if (event.key === "Escape") setMenu(false); });
+  window.addEventListener("resize", () => { if (window.innerWidth > 960) setMenu(false); });
 
   const revealGroups = [
     [".hero-copy", "reveal"],
