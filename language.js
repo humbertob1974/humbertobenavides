@@ -1,142 +1,67 @@
 (() => {
   const translations = new Map([
-    ["Firma", "Firm"],
-    ["Método", "Method"],
-    ["Servicios", "Services"],
-    ["Filosofía", "Philosophy"],
-    ["Contacto", "Contact"],
-    ["Conversemos", "Let's talk"],
-    ["Conversemos sobre su empresa", "Let's talk about your company"],
-    ["Conozca IMPACT 0.1", "Discover IMPACT 0.1"],
+    ["Firma", "Firm"], ["Método", "Method"], ["Situaciones", "Situations"], ["Servicios", "Services"], ["Filosofía", "Philosophy"], ["Contacto", "Contact"],
+    ["Conversemos", "Let's talk"], ["Conversemos sobre su empresa", "Let's talk about your company"], ["Conozca IMPACT 0.1", "Discover IMPACT 0.1"],
     ["Asesoría de transformación empresarial", "Business transformation advisory"],
-    ["Transformando empresas mediante", "Transforming companies through"],
-    ["estrategia, liderazgo", "strategy, leadership"],
-    ["e inteligencia artificial.", "and artificial intelligence."],
+    ["Transformando empresas mediante", "Transforming companies through"], ["estrategia, liderazgo", "strategy, leadership"], ["e inteligencia artificial.", "and artificial intelligence."],
     ["Ayudamos a empresarios y equipos directivos a identificar lo que realmente está frenando su organización, transformar sus procesos y construir capacidades que produzcan resultados medibles.", "We help business owners and executive teams identify what is truly holding their organization back, transform their processes, and build capabilities that produce measurable results."],
-    ["años integrando tecnología, operaciones y negocio", "years integrating technology, operations, and business"],
-    ["años liderando sistemas y construyendo soluciones", "years leading systems and building solutions"],
-    ["años al frente de la dirección general", "years leading as chief executive"],
-    ["No empezamos con la tecnología.", "We don't start with technology."],
-    ["Empezamos entendiendo la empresa.", "We start by understanding the business."],
+    ["años integrando tecnología, operaciones y negocio", "years integrating technology, operations, and business"], ["años liderando sistemas y construyendo soluciones", "years leading systems and building solutions"], ["años al frente de la dirección general", "years leading as chief executive"],
+    ["No empezamos con la tecnología.", "We don't start with technology."], ["Empezamos entendiendo la empresa.", "We start by understanding the business."],
     ["Benavides Trusted Advisors nace para ayudar a más empresas a transformar la forma en que operan, deciden y crecen. Integramos experiencia ejecutiva, estrategia, liderazgo, optimización de procesos, automatización e inteligencia artificial aplicada.", "Benavides Trusted Advisors was created to help more companies transform the way they operate, make decisions, and grow. We integrate executive experience, strategy, leadership, process optimization, automation, and applied artificial intelligence."],
     ["Primero encontramos el verdadero “dolor de muelas”: el problema que está generando o frenando a los demás. Después observamos, medimos y priorizamos. Solo entonces decidimos qué simplificar, qué rediseñar y dónde la tecnología puede crear valor.", "First, we find the true root cause: the problem creating or constraining the others. Then we observe, measure, and prioritize. Only then do we decide what to simplify, what to redesign, and where technology can create value."],
-    ["Nuestra regla de trabajo", "Our working rule"],
-    ["Todo proceso debe justificar el tiempo que consume.", "Every process must justify the time it consumes."],
-    ["Metodología IMPACT 0.1", "IMPACT 0.1 Methodology"],
-    ["De la realidad operativa a la transformación medible", "From operational reality to measurable transformation"],
+    ["Nuestra regla de trabajo", "Our working rule"], ["Todo proceso debe justificar el tiempo que consume.", "Every process must justify the time it consumes."],
+    ["Metodología IMPACT 0.1", "IMPACT 0.1 Methodology"], ["De la realidad operativa a la transformación medible", "From operational reality to measurable transformation"],
     ["Un proceso riguroso para entender, decidir, construir y transformar.", "A rigorous process to understand, decide, build, and transform."],
     ["IMPACT no fuerza a la empresa dentro de una solución. Parte de su realidad, mide antes de intervenir y deja evidencia concreta en cada etapa.", "IMPACT does not force a company into a solution. It starts from operational reality, measures before intervening, and leaves concrete evidence at every stage."],
-    ["Identify", "Identificar"],
-    ["Measure", "Medir"],
-    ["Prioritize", "Priorizar"],
-    ["Analyze", "Analizar"],
-    ["Create", "Construir"],
-    ["Transform", "Transformar"],
-    ["Identificar", "Identify"],
-    ["Medir", "Measure"],
-    ["Priorizar", "Prioritize"],
-    ["Analizar", "Analyze"],
-    ["Construir", "Create"],
-    ["Transformar", "Transform"],
-    ["Entender cómo funciona realmente el proceso antes de hacer recomendaciones.", "Understand how the process truly works before making recommendations."],
-    ["Observar antes de juzgar. Escuchar antes de proponer.", "Observe before judging. Listen before proposing."],
-    ["Convertir la realidad observada en información cuantificable.", "Turn observed reality into quantifiable information."],
-    ["Lo que solamente percibimos puede discutirse. Lo que medimos puede analizarse.", "What we merely perceive can be debated. What we measure can be analyzed."],
-    ["Determinar dónde intervenir primero para crear el mayor valor compartido.", "Determine where to intervene first to create the greatest shared value."],
-    ["No todo lo que puede mejorarse debe mejorarse al mismo tiempo.", "Not everything that can be improved should be improved at the same time."],
-    ["Diseñar el mejor proceso antes de elegir la tecnología.", "Design the best process before choosing the technology."],
-    ["Primero analizo. Después decido si automatizo.", "First I analyze. Then I decide whether to automate."],
-    ["Convertir el diseño optimizado en una solución funcional.", "Turn the optimized design into a functional solution."],
-    ["La tecnología es una herramienta. La solución es el resultado.", "Technology is a tool. The solution is the outcome."],
-    ["Convertir la mejora implementada en resultados medibles y nueva capacidad organizacional.", "Turn the implemented improvement into measurable results and new organizational capability."],
-    ["Una implementación no es transformación hasta que produce valor.", "An implementation is not transformation until it creates value."],
-    ["Entregable", "Deliverable"],
-    ["Mapa de Realidad Operativa", "Operational Reality Map"],
-    ["Línea Base Operativa", "Operational Baseline"],
-    ["Mapa de Prioridades de Transformación", "Transformation Priorities Map"],
-    ["Cadena de Valor Optimizada", "Optimized Value Chain"],
-    ["Solución Operativa IMPACT", "IMPACT Operational Solution"],
-    ["Reporte de Transformación IMPACT", "IMPACT Transformation Report"],
-    ["Matriz Benavides", "Benavides Matrix"],
-    ["Priorizar el valor compartido", "Prioritizing shared value"],
-    ["No elegimos lo más llamativo. Elegimos lo que genera el mayor impacto sostenible.", "We don't choose what is most impressive. We choose what creates the greatest sustainable impact."],
-    ["Impacto organizacional", "Organizational impact"],
-    ["Capacidad liberada", "Released capacity"],
-    ["Impacto humano", "Human impact"],
-    ["Valor económico", "Economic value"],
-    ["Viabilidad", "Feasibility"],
-    ["Sostenibilidad", "Sustainability"],
-    ["El principio de capacidad liberada", "The released capacity principle"],
-    ["No celebramos horas ahorradas. Celebramos capacidad recuperada y bien utilizada.", "We don't celebrate hours saved. We celebrate capacity recovered and put to good use."],
-    ["Antes", "Before"],
-    ["Después", "After"],
+    ["Identify", "Identificar"], ["Measure", "Medir"], ["Prioritize", "Priorizar"], ["Analyze", "Analizar"], ["Create", "Construir"], ["Transform", "Transformar"],
+    ["Identificar", "Identify"], ["Medir", "Measure"], ["Priorizar", "Prioritize"], ["Analizar", "Analyze"], ["Construir", "Create"], ["Transformar", "Transform"],
+    ["Entender cómo funciona realmente el proceso: personas, decisiones, sistemas, excepciones y puntos de fricción, antes de hacer recomendaciones.", "Understand how the process truly works—people, decisions, systems, exceptions, and friction points—before making recommendations."], ["Observar antes de juzgar. Escuchar antes de proponer.", "Observe before judging. Listen before proposing."],
+    ["Cuantificar tiempos, frecuencia, errores, esperas, retrabajos y recursos para construir una línea base objetiva.", "Quantify time, frequency, errors, waits, rework, and resources to build an objective baseline."], ["Lo que solamente percibimos puede discutirse. Lo que medimos puede analizarse.", "What we merely perceive can be debated. What we measure can be analyzed."],
+    ["Seleccionar dónde intervenir primero para crear el mayor valor compartido y no dispersar el esfuerzo.", "Select where to intervene first to create the greatest shared value without dispersing effort."], ["No todo lo que puede mejorarse debe mejorarse al mismo tiempo.", "Not everything that can be improved should be improved at the same time."],
+    ["Cuestionar cada paso; eliminar lo que no agrega valor; simplificar, integrar y conservar lo necesario. Solo después decidir si conviene automatizar.", "Challenge every step; eliminate what does not add value; simplify, integrate, and retain what is necessary. Only then decide whether automation makes sense."], ["Analizo, no automatizo.", "I analyze; I do not automate by default."],
+    ["Diseñar y desarrollar la solución adecuada: proceso, sistema, automatización o IA, según lo que la operación realmente necesita.", "Design and develop the right solution—process, system, automation, or AI—based on what operations truly need."], ["La tecnología es una herramienta. La solución es el resultado.", "Technology is a tool. The solution is the outcome."],
+    ["Implementar, volver a medir y demostrar el antes y el después en resultados operativos, económicos y humanos.", "Implement, measure again, and demonstrate the before and after in operational, economic, and human results."], ["Una implementación no es una transformación hasta que produce valor.", "An implementation is not a transformation until it creates value."],
+    ["Entregable", "Deliverable"], ["Mapa de Realidad Operativa", "Operational Reality Map"], ["Línea Base Operativa", "Operational Baseline"], ["Mapa de Prioridades de Transformación", "Transformation Priorities Map"], ["Cadena de Valor Optimizada", "Optimized Value Chain"], ["Solución Operativa IMPACT", "IMPACT Operational Solution"], ["Reporte de Transformación IMPACT", "IMPACT Transformation Report"],
+    ["La transformación se demuestra con evidencia.", "Transformation is demonstrated with evidence."], ["Comparamos el antes y el después en cinco dimensiones para hacer visible el valor creado.", "We compare before and after across five dimensions to make the value created visible."], ["Tiempo", "Time"], ["Dinero", "Financial value"], ["Capacidad", "Capacity"], ["Experiencia humana", "Human experience"], ["Calidad", "Quality"],
+    ["Matriz Benavides", "Benavides Matrix"], ["Priorizar el valor compartido", "Prioritizing shared value"], ["No elegimos lo más llamativo. Elegimos lo que genera el mayor impacto sostenible.", "We don't choose what is most impressive. We choose what creates the greatest sustainable impact."],
+    ["Impacto organizacional", "Organizational impact"], ["Capacidad liberada", "Released capacity"], ["Impacto humano", "Human impact"], ["Valor económico", "Economic value"], ["Viabilidad", "Feasibility"], ["Sostenibilidad", "Sustainability"],
+    ["El principio de capacidad liberada", "The released capacity principle"], ["No celebramos horas ahorradas. Celebramos capacidad recuperada y bien utilizada.", "We don't celebrate hours saved. We celebrate capacity recovered and put to good use."], ["Antes", "Before"], ["Después", "After"],
     ["El tiempo liberado no es simplemente ahorro. Es capacidad recuperada. Su mejor utilización se decide entre la organización y el dueño del proceso para que produzca valor para ambos.", "Released time is not simply a saving. It is recovered capacity. Its best use is decided jointly by the organization and the process owner so it creates value for both."],
     ["Transformación = mejora medible del negocio + capacidad liberada + desarrollo de las personas", "Transformation = measurable business improvement + released capacity + people development"],
-    ["Del problema real a la capacidad instalada", "From the real problem to installed capability"],
-    ["Intervenimos donde la transformación genera valor.", "We engage where transformation creates value."],
-    ["Diagnóstico ejecutivo IMPACT", "IMPACT Executive Assessment"],
-    ["Entendemos cómo funciona realmente la empresa, hacemos visible lo que hoy se percibe y construimos una línea base para decidir con evidencia.", "We understand how the company truly operates, make visible what is currently only perceived, and build a baseline for evidence-based decisions."],
-    ["Optimización de procesos", "Process optimization"],
-    ["Cuestionamos, simplificamos y rediseñamos la cadena de valor antes de incorporar herramientas o automatización.", "We challenge, simplify, and redesign the value chain before introducing tools or automation."],
-    ["Automatización e IA aplicada", "Automation and applied AI"],
-    ["Construimos soluciones que integran sistemas, eliminan trabajo repetitivo y amplifican la capacidad de las personas donde la IA aporta valor real.", "We build solutions that integrate systems, eliminate repetitive work, and expand people's capabilities where AI delivers real value."],
-    ["Transformación organizacional", "Organizational transformation"],
-    ["Alineamos procesos, tecnología, liderazgo y adopción para que la mejora se convierta en una nueva capacidad de la empresa.", "We align processes, technology, leadership, and adoption so improvement becomes a new organizational capability."],
-    ["Acompañamiento estratégico", "Strategic advisory"],
-    ["Trabajamos junto al empresario y su equipo directivo para priorizar, decidir y ejecutar con claridad, continuidad y resultados medibles.", "We work alongside business owners and their executive teams to prioritize, decide, and execute with clarity, continuity, and measurable results."],
-    ["Nuestros estándares", "Our standards"],
-    ["Cómo sabemos que el trabajo está bien hecho", "How we know the work is done well"],
-    ["Seis compromisos que protegen la calidad de cada transformación.", "Six commitments that protect the quality of every transformation."],
-    ["Comprensión validada", "Validated understanding"],
-    ["El cliente confirma que entendimos su realidad.", "The client confirms that we understood their reality."],
-    ["Evidencia objetiva", "Objective evidence"],
-    ["Las decisiones están respaldadas por datos y observación.", "Decisions are supported by data and observation."],
-    ["Simplicidad demostrada", "Demonstrated simplicity"],
-    ["Evaluamos la opción más simple antes de añadir complejidad.", "We evaluate the simplest option before adding complexity."],
-    ["Adopción por las personas", "People adoption"],
-    ["La solución se considera implementada cuando las personas la usan y la entienden.", "A solution is considered implemented when people use it and understand it."],
-    ["Valor demostrable", "Demonstrable value"],
-    ["Existe un antes y un después claro.", "There is a clear before and after."],
-    ["El cliente puede sostener la mejora sin depender permanentemente de nosotros.", "The client can sustain the improvement without permanently depending on us."],
-    ["“No entregamos proyectos.", "“We don't deliver projects."],
-    ["Dejamos capacidades instaladas.", "We leave lasting capabilities in place."],
-    ["”", "”"],
-    ["La tecnología cambia procesos.", "Technology changes processes."],
-    ["El liderazgo cambia personas.", "Leadership changes people."],
-    ["La combinación correcta cambia empresas.", "The right combination changes companies."],
-    ["— Filosofía Benavides Trusted Advisors", "— Benavides Trusted Advisors Philosophy"],
-    ["Visión ejecutiva.", "Executive vision."],
-    ["Experiencia operativa.", "Operational experience."],
-    ["Fundador · Asesor de transformación empresarial", "Founder · Business transformation advisor"],
-    ["Tecnología desde el principio. Negocio desde la experiencia.", "Technology from the beginning. Business through experience."],
+    ["Situaciones en las que podemos ayudar", "Situations where we can help"], ["Cuando trabajar más ya no resuelve el problema", "When working harder no longer solves the problem"],
+    ["La transformación comienza cuando la empresa reconoce lo que hoy está limitando su capacidad.", "Transformation begins when a company recognizes what is limiting its capacity today."],
+    ["No siempre existe un problema aislado. Con frecuencia hay señales repetidas que indican que los procesos, la información o la forma de decidir ya no corresponden con la realidad de la empresa.", "There is not always one isolated problem. Often, recurring signals indicate that processes, information, or decision-making no longer match the company's reality."],
+    ["El crecimiento superó a los procesos", "Growth has outpaced the processes"], ["La empresa creció, pero la operación depende de prácticas que funcionaban cuando era más pequeña.", "The company has grown, but operations still depend on practices that worked when it was smaller."],
+    ["La dirección decide sin suficiente visibilidad", "Leadership is deciding without enough visibility"], ["La información existe, pero llega tarde, está fragmentada o no permite entender qué está ocurriendo realmente.", "The information exists, but it arrives late, is fragmented, or does not reveal what is truly happening."],
+    ["Personas clave sostienen demasiado", "Key people are carrying too much"], ["El conocimiento y la continuidad de la operación dependen de unas cuantas personas que ya trabajan al límite.", "Knowledge and operational continuity depend on a few people who are already working at their limit."],
+    ["El trabajo manual consume capacidad", "Manual work is consuming capacity"], ["Tareas repetitivas, capturas duplicadas y seguimiento administrativo reducen el tiempo disponible para crear valor.", "Repetitive tasks, duplicate data entry, and administrative follow-up reduce the time available to create value."],
+    ["Los sistemas existen, pero no trabajan juntos", "Systems exist, but they do not work together"], ["La tecnología está presente, aunque la información continúa moviéndose mediante correos, hojas de cálculo y esfuerzo humano.", "Technology is present, yet information still moves through emails, spreadsheets, and human effort."],
+    ["Existe presión por usar IA sin una prioridad clara", "There is pressure to use AI without a clear priority"], ["La organización quiere avanzar, pero todavía no ha definido qué problema resolver, cómo medirlo ni dónde comenzar.", "The organization wants to move forward, but has not yet defined which problem to solve, how to measure it, or where to begin."],
+    ["Si alguna de estas situaciones le resulta familiar, probablemente existe una oportunidad de transformación que vale la pena hacer visible.", "If any of these situations feels familiar, there is likely a transformation opportunity worth making visible."],
+    ["Del problema real a la capacidad instalada", "From the real problem to installed capability"], ["Intervenimos donde la transformación genera valor.", "We engage where transformation creates value."],
+    ["Diagnóstico ejecutivo IMPACT", "IMPACT Executive Assessment"], ["Entendemos cómo funciona realmente la empresa, hacemos visible lo que hoy se percibe y construimos una línea base para decidir con evidencia.", "We understand how the company truly operates, make visible what is currently only perceived, and build a baseline for evidence-based decisions."],
+    ["Optimización de procesos", "Process optimization"], ["Cuestionamos, simplificamos y rediseñamos la cadena de valor antes de incorporar herramientas o automatización.", "We challenge, simplify, and redesign the value chain before introducing tools or automation."],
+    ["Automatización e IA aplicada", "Automation and applied AI"], ["Construimos soluciones que integran sistemas, eliminan trabajo repetitivo y amplifican la capacidad de las personas donde la IA aporta valor real.", "We build solutions that integrate systems, eliminate repetitive work, and expand people's capabilities where AI delivers real value."],
+    ["Transformación organizacional", "Organizational transformation"], ["Alineamos procesos, tecnología, liderazgo y adopción para que la mejora se convierta en una nueva capacidad de la empresa.", "We align processes, technology, leadership, and adoption so improvement becomes a new organizational capability."],
+    ["Acompañamiento estratégico", "Strategic advisory"], ["Trabajamos junto al empresario y su equipo directivo para priorizar, decidir y ejecutar con claridad, continuidad y resultados medibles.", "We work alongside business owners and their executive teams to prioritize, decide, and execute with clarity, continuity, and measurable results."],
+    ["Nuestros estándares", "Our standards"], ["Cómo sabemos que el trabajo está bien hecho", "How we know the work is done well"], ["Seis compromisos que protegen la calidad de cada transformación.", "Six commitments that protect the quality of every transformation."],
+    ["Comprensión validada", "Validated understanding"], ["El cliente confirma que entendimos su realidad.", "The client confirms that we understood their reality."], ["Evidencia objetiva", "Objective evidence"], ["Las decisiones están respaldadas por datos y observación.", "Decisions are supported by data and observation."],
+    ["Simplicidad demostrada", "Demonstrated simplicity"], ["Evaluamos la opción más simple antes de añadir complejidad.", "We evaluate the simplest option before adding complexity."], ["Adopción por las personas", "People adoption"], ["La solución se considera implementada cuando las personas la usan y la entienden.", "A solution is considered implemented when people use it and understand it."],
+    ["Valor demostrable", "Demonstrable value"], ["Existe un antes y un después claro.", "There is a clear before and after."], ["El cliente puede sostener la mejora sin depender permanentemente de nosotros.", "The client can sustain the improvement without permanently depending on us."],
+    ["“No entregamos proyectos.", "“We don't deliver projects."], ["Dejamos capacidades instaladas.", "We leave lasting capabilities in place."], ["La tecnología cambia procesos.", "Technology changes processes."], ["El liderazgo cambia personas.", "Leadership changes people."], ["La combinación correcta cambia empresas.", "The right combination changes companies."],
+    ["— Filosofía Benavides Trusted Advisors", "— Benavides Trusted Advisors Philosophy"], ["Visión ejecutiva.", "Executive vision."], ["Experiencia operativa.", "Operational experience."],
+    ["Fundador · Asesor de transformación empresarial", "Founder · Business transformation advisor"], ["Tecnología desde el principio. Negocio desde la experiencia.", "Technology from the beginning. Business through experience."],
     ["Su relación con la tecnología comenzó en high school, cuando una computadora Texas Instruments y el lenguaje BASIC despertaron una curiosidad que se convertiría en una carrera.", "His relationship with technology began in high school, when a Texas Instruments computer and the BASIC programming language sparked a curiosity that would become a career."],
     ["Durante más de 27 años pasó de programar y construir soluciones a dirigir sistemas, operaciones y finalmente una empresa mediana-grande desde la posición de CEO. Esa trayectoria le enseñó a traducir entre dos mundos que rara vez hablan el mismo idioma: las necesidades del negocio y las posibilidades de la tecnología.", "Over more than 27 years, he progressed from programming and building solutions to leading systems, operations, and ultimately a mid-to-large company as CEO. That journey taught him to translate between two worlds that rarely speak the same language: business needs and technological possibilities."],
     ["Creó Benavides Trusted Advisors para poner esa capacidad al servicio de muchas organizaciones y acompañar a sus líderes desde una convicción propia: transformar procesos sin perder de vista a las personas que los hacen posibles.", "He founded Benavides Trusted Advisors to put that capability to work for many organizations and support their leaders with a deeply held conviction: transform processes without losing sight of the people who make them possible."],
-    ["Estrategia", "Strategy"],
-    ["Liderazgo", "Leadership"],
-    ["Operaciones", "Operations"],
-    ["Automatización", "Automation"],
-    ["Inteligencia artificial", "Artificial intelligence"],
-    ["Una pregunta para comenzar", "One question to begin"],
-    ["De todos los problemas que tiene hoy su empresa, ¿cuál cree usted que es el que realmente la mantiene estancada y está frenando a los demás?", "Of all the problems your company faces today, which one do you believe is truly keeping it stuck and holding everything else back?"],
-    ["Ahí comienza nuestro trabajo.", "That is where our work begins."],
-    ["Transformando empresas mediante estrategia, liderazgo e inteligencia artificial.", "Transforming companies through strategy, leadership, and artificial intelligence."],
-    ["© 2026 Benavides Trusted Advisors", "© 2026 Benavides Trusted Advisors"]
+    ["Estrategia", "Strategy"], ["Liderazgo", "Leadership"], ["Operaciones", "Operations"], ["Automatización", "Automation"], ["Inteligencia artificial", "Artificial intelligence"],
+    ["Una pregunta para comenzar", "One question to begin"], ["De todos los problemas que tiene hoy su empresa, ¿cuál cree usted que es el que realmente la mantiene estancada y está frenando a los demás?", "Of all the problems your company faces today, which one do you believe is truly keeping it stuck and holding everything else back?"],
+    ["Ahí comienza nuestro trabajo.", "That is where our work begins."], ["Transformando empresas mediante estrategia, liderazgo e inteligencia artificial.", "Transforming companies through strategy, leadership, and artificial intelligence."], ["© 2026 Benavides Trusted Advisors", "© 2026 Benavides Trusted Advisors"]
   ]);
 
   const nodes = [];
-  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
-    acceptNode(node) {
-      const parent = node.parentElement;
-      if (!parent || parent.closest("script, style") || !node.data.trim()) return NodeFilter.FILTER_REJECT;
-      return NodeFilter.FILTER_ACCEPT;
-    }
-  });
-  while (walker.nextNode()) {
-    const node = walker.currentNode;
-    nodes.push({ node, original: node.data });
-  }
-
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, { acceptNode(node) { const parent = node.parentElement; return !parent || parent.closest("script, style") || !node.data.trim() ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT; } });
+  while (walker.nextNode()) nodes.push({ node:walker.currentNode, original:walker.currentNode.data });
   const buttons = [...document.querySelectorAll("[data-lang]")];
   const description = document.querySelector('meta[name="description"]');
   const ogDescription = document.querySelector('meta[property="og:description"]');
@@ -155,27 +80,12 @@
     languageGroup?.setAttribute("aria-label", english ? "Select language" : "Seleccionar idioma");
     brandHome?.setAttribute("aria-label", english ? "Benavides Trusted Advisors, home" : "Benavides Trusted Advisors, inicio");
     mainNav?.setAttribute("aria-label", english ? "Main navigation" : "Navegación principal");
-    menuButton?.setAttribute("aria-label", menuButton.getAttribute("aria-expanded") === "true" ? (english ? "Close menu" : "Cerrar menú") : (english ? "Open menu" : "Abrir menú"));
     portrait?.setAttribute("alt", english ? "Humberto Benavides, founder of Benavides Trusted Advisors" : "Humberto Benavides, fundador de Benavides Trusted Advisors");
-
-    nodes.forEach(({ node, original }) => {
-      if (!english) {
-        node.data = original;
-        return;
-      }
-      const source = original.trim();
-      const translated = translations.get(source);
-      node.data = translated ? original.replace(source, translated) : original;
-    });
-
+    nodes.forEach(({node,original}) => { if (!english) return void (node.data=original); const source=original.trim(); const translated=translations.get(source); node.data=translated ? original.replace(source,translated) : original; });
     buttons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.lang === language)));
+    setMenu(false);
     try { localStorage.setItem("benavides-trusted-advisors-language", language); } catch {}
   }
-
-  buttons.forEach(button => button.addEventListener("click", () => applyLanguage(button.dataset.lang)));
-  let initial = "es";
-  try { initial = localStorage.getItem("benavides-trusted-advisors-language") === "en" ? "en" : "es"; } catch {}
-  applyLanguage(initial);
 
   function setMenu(open) {
     mainNav?.classList.toggle("is-open", open);
@@ -184,55 +94,20 @@
     menuButton?.setAttribute("aria-label", open ? (english ? "Close menu" : "Cerrar menú") : (english ? "Open menu" : "Abrir menú"));
   }
 
+  buttons.forEach(button => button.addEventListener("click", () => applyLanguage(button.dataset.lang)));
   menuButton?.addEventListener("click", () => setMenu(menuButton.getAttribute("aria-expanded") !== "true"));
   mainNav?.querySelectorAll("a").forEach(link => link.addEventListener("click", () => setMenu(false)));
   document.addEventListener("keydown", event => { if (event.key === "Escape") setMenu(false); });
   window.addEventListener("resize", () => { if (window.innerWidth > 960) setMenu(false); });
+  let initial = "es";
+  try { initial = localStorage.getItem("benavides-trusted-advisors-language") === "en" ? "en" : "es"; } catch {}
+  applyLanguage(initial);
 
-  const revealGroups = [
-    [".hero-copy", "reveal"],
-    [".hero-proof > div", "reveal"],
-    [".section-label", "reveal"],
-    [".manifesto-content > *", "reveal"],
-    [".method-heading > div:last-child", "reveal"],
-    [".method-grid article", "reveal-scale"],
-    [".priority .section-intro > div:last-child", "reveal"],
-    [".priority-grid > div", "reveal-scale"],
-    [".capacity > *", "reveal"],
-    [".services .section-intro > div:last-child", "reveal"],
-    [".service-list article", "reveal"],
-    [".standards-heading > div:last-child", "reveal"],
-    [".standards-grid article", "reveal-scale"],
-    [".installed-capacity", "reveal"],
-    [".philosophy > *", "reveal"],
-    [".founder-portrait", "reveal-left"],
-    [".founder-copy > *", "reveal"],
-    [".contact > *", "reveal"],
-    ["footer > *", "reveal"]
+  const groups = [
+    [".hero-copy","reveal"], [".hero-proof > div","reveal"], [".section-label","reveal"], [".manifesto-content > *","reveal"], [".method-heading > div:last-child","reveal"], [".method-grid article","reveal-scale"], [".impact-scorecard","reveal"], [".priority .section-intro > div:last-child","reveal"], [".priority-grid > div","reveal-scale"], [".capacity > *","reveal"], [".situations-heading > div:last-child","reveal"], [".situations-grid article","reveal-scale"], [".situations-cta","reveal"], [".services .section-intro > div:last-child","reveal"], [".service-list article","reveal"], [".standards-heading > div:last-child","reveal"], [".standards-grid article","reveal-scale"], [".installed-capacity","reveal"], [".philosophy > *","reveal"], [".founder-portrait","reveal-left"], [".founder-copy > *","reveal"], [".contact > *","reveal"], ["footer > *","reveal"]
   ];
-
-  const revealElements = [];
-  revealGroups.forEach(([selector, variant]) => {
-    document.querySelectorAll(selector).forEach((element, index) => {
-      element.classList.add("reveal");
-      if (variant !== "reveal") element.classList.add(variant);
-      element.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 90}ms`);
-      revealElements.push(element);
-    });
-  });
-
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (reduceMotion || !("IntersectionObserver" in window)) {
-    revealElements.forEach(element => element.classList.add("is-visible"));
-  } else {
-    document.documentElement.classList.add("motion-ready");
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      });
-    }, { threshold:0.12, rootMargin:"0px 0px -7% 0px" });
-    revealElements.forEach(element => observer.observe(element));
-  }
+  const revealElements=[];
+  groups.forEach(([selector,variant]) => document.querySelectorAll(selector).forEach((element,index) => { element.classList.add("reveal"); if (variant!=="reveal") element.classList.add(variant); element.style.setProperty("--reveal-delay",`${Math.min(index%4,3)*90}ms`); revealElements.push(element); }));
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) revealElements.forEach(element=>element.classList.add("is-visible"));
+  else { document.documentElement.classList.add("motion-ready"); const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target);}}),{threshold:.12,rootMargin:"0px 0px -7% 0px"}); revealElements.forEach(element=>observer.observe(element)); }
 })();
