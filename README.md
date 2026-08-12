@@ -1,4 +1,4 @@
-# Firma Benavides — sitio estático
+# Benavides Trusted Advisors — sitio estático
 
 Paquete listo para publicar con GitHub Pages en `humbertobenavides.com`.
 
@@ -10,3 +10,5 @@ Paquete listo para publicar con GitHub Pages en `humbertobenavides.com`.
 4. Elija la rama **main**, la carpeta **/(root)** y guarde.
 
 El archivo `CNAME` ya contiene el dominio personalizado.
+
+El selector **ES / EN** incluido en el encabezado traduce todo el sitio y recuerda el idioma seleccionado en el dispositivo del visitante.
